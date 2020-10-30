@@ -1,0 +1,160 @@
+body{
+  width: 100%;
+  margin: 0;
+}
+.menu {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding:10px 20px 5px 20px;
+  background-color: rgb(29, 27, 27);
+}
+.menu-left{
+  position: relative;
+  display: table-cell;
+  float: left;
+  margin: 0;
+  padding: 0;
+
+}
+.menu-left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-left ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.menu-right{
+  position: relative;
+  display: table-cell;
+ float: right;
+ margin: 0;
+ padding: 0;
+ 
+}
+.menu-right ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+.menu-right ul li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+ }
+
+.menu-left a, .menu-right a{
+  color: rgb(189, 184, 184);
+  margin: 0px 5px 0px 5px;
+  font-size: medium;
+  text-decoration: none;
+}
+.menu-left a:hover, .menu-right a:hover{
+  color: white;
+ text-decoration: white;
+}
+
+.event-lists{
+  position: relative;
+  display: none;
+  z-index: 1;
+  list-style: none;
+  background-color: rgb(68, 63, 63);
+  color: white;
+ 
+}
+.business-lists{
+  position: relative;
+  display: none;
+  z-index: 1;
+  list-style: none;
+  background-color: rgb(68, 63, 63);
+  color: white;
+ 
+}
+.menu-btn-events:hover .event-lists {
+   display: block;
+   position: absolute;
+}
+.menu-btn-events{
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgb(212, 208, 208);
+  background-color: rgb(29, 27, 27);
+}
+.menu-btn-business:hover .business-lists {
+  display: inline;
+  position: absolute;
+}
+.menu-btn-business{
+ display: inline-block;
+ border: none;
+ margin: 0;
+ padding: 0;
+ color: rgb(212, 208, 208);
+ background-color: rgb(29, 27, 27);
+}
+
+.menu-btn-business ul li, .menu-btn-events ul li {
+  display: block;
+}
+.event-lists li, .business-lists li {
+  font-size: 40px;
+margin: 20px 10px 20px 10px;
+}
+.latest-news{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1.4fr 1fr;
+  width:100%;
+  padding: 20px;
+
+}
+.news-one{
+  background-image: url(./images/1-20-796x417.jpg);
+  height: 400px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.part-one{
+  background-image: url(./images/tesla-giveaway-editorial-2000x1000-796x398.jpg);
+  height: 190px;
+  width:100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+.part-two{
+  background-image: url(./images/Untitled-design-2020-10-28T144028.713-796x417.png);
+  height: 190px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+  @media only screen and (max-width:768px){
+    .latest-news {
+      display: grid;
+      grid-template-columns:auto;
+      width:100%;
+      background-color: rgb(9, 222, 230);
+    }
+   
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .latest-news {
+    width:100%;
+    background-color: brown;
+  }
+}
+
+
+
+
+
